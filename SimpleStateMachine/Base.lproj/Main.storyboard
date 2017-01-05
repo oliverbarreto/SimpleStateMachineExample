@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,22 +29,22 @@
                                     <constraint firstAttribute="width" constant="100" id="GJ6-Sl-TiK"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwr-xa-UYi">
-                                <rect key="frame" x="155" y="449" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwr-xa-UYi">
+                                <rect key="frame" x="155" y="479" width="64" height="30"/>
                                 <state key="normal" title="caution"/>
                                 <connections>
                                     <action selector="caution:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R7j-EX-A05"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kac-03-EOP">
-                                <rect key="frame" x="36" y="449" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kac-03-EOP">
+                                <rect key="frame" x="155" y="448" width="64" height="30"/>
                                 <state key="normal" title="stop"/>
                                 <connections>
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKU-Rt-dhJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoJ-ZI-0dJ">
-                                <rect key="frame" x="273" y="449" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoJ-ZI-0dJ">
+                                <rect key="frame" x="155" y="517" width="64" height="30"/>
                                 <state key="normal" title="go"/>
                                 <connections>
                                     <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edN-v4-iNS"/>
@@ -55,17 +54,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NBR-4h-0NK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="266-vy-Kfz"/>
-                            <constraint firstItem="GoJ-ZI-0dJ" firstAttribute="width" secondItem="Jwr-xa-UYi" secondAttribute="width" id="3Xr-90-gFS"/>
-                            <constraint firstItem="GoJ-ZI-0dJ" firstAttribute="leading" secondItem="Jwr-xa-UYi" secondAttribute="trailing" constant="54" id="ILq-7S-v3a"/>
-                            <constraint firstItem="kac-03-EOP" firstAttribute="width" secondItem="Jwr-xa-UYi" secondAttribute="width" id="RoD-zU-ma1"/>
-                            <constraint firstItem="kac-03-EOP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="SVF-AU-fFG"/>
-                            <constraint firstItem="kac-03-EOP" firstAttribute="centerY" secondItem="Jwr-xa-UYi" secondAttribute="centerY" id="buB-Lv-6KN"/>
+                            <constraint firstItem="GoJ-ZI-0dJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2eJ-aA-sIA"/>
+                            <constraint firstItem="Jwr-xa-UYi" firstAttribute="top" secondItem="kac-03-EOP" secondAttribute="bottom" constant="1" id="AyY-VO-xch"/>
+                            <constraint firstItem="kac-03-EOP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ECs-dc-YG0"/>
+                            <constraint firstItem="Jwr-xa-UYi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fc6-4B-k3d"/>
+                            <constraint firstItem="kac-03-EOP" firstAttribute="top" secondItem="NBR-4h-0NK" secondAttribute="bottom" constant="64.5" id="arn-i3-yO9"/>
                             <constraint firstItem="NBR-4h-0NK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g0E-12-mYJ"/>
-                            <constraint firstItem="Jwr-xa-UYi" firstAttribute="top" secondItem="NBR-4h-0NK" secondAttribute="bottom" constant="65" id="hZH-QD-blo"/>
-                            <constraint firstItem="Jwr-xa-UYi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jzc-CC-8jb"/>
-                            <constraint firstItem="GoJ-ZI-0dJ" firstAttribute="centerY" secondItem="Jwr-xa-UYi" secondAttribute="centerY" id="mf1-7d-Y9j"/>
-                            <constraint firstItem="Jwr-xa-UYi" firstAttribute="leading" secondItem="kac-03-EOP" secondAttribute="trailing" constant="55" id="sHP-b1-0pS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GoJ-ZI-0dJ" secondAttribute="trailing" constant="22" id="vx8-ce-9f6"/>
+                            <constraint firstItem="GoJ-ZI-0dJ" firstAttribute="top" secondItem="Jwr-xa-UYi" secondAttribute="bottom" constant="8" id="tkt-Ct-MuI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -74,6 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1071" y="-122"/>
         </scene>
     </scenes>
 </document>
